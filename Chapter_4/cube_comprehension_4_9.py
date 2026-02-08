@@ -1,0 +1,4 @@
+# Cube comprehension
+# use a list comprehension to generate a list of the first 10 cubes
+cubes = [value**3 for value in range(1, 10)]
+print(cubes)
