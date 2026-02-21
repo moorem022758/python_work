@@ -2,10 +2,10 @@
 
 # This separates dictionary items lines
 favorite_languages = {
-    "jen" : "python",
-    "sarah" : "c",
-    "edward" : "rust",
-    "phil" : "python",
+    "jen" : ["python", "rust"],
+    "sarah" : ["c"],
+    "edward" : ["rust", "go"],
+    "phil" : ["python", "haskell"],
 }
 
 
@@ -43,6 +43,12 @@ favorite_languages = {
     # print(f"{name.title()}, thank you for taking the poll.")
 
 # This is using the values() method
-print("The following languages have been mentioned:")
-for language in favorite_languages.values():
-    print(language.title())   
+# print("The following languages have been mentioned:")
+# for language in favorite_languages.values():
+    # print(language.title())
+
+# Nesting a list inside a dictionary
+for name, languages in favorite_languages.items():
+    print(f"\n{name.title()}'s favorite languages are:")
+    for language in languages:
+        print(f"\t{language.title()}")       
