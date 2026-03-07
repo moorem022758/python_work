@@ -15,6 +15,9 @@ def describe_pet(pet_name, animal_type='dog'):
 # describe_pet(animal_type='hamster', pet_name='harry')
 
 """Default Values"""
-describe_pet(pet_name='willie')
-describe_pet('willie')
-describe_pet(pet_name='john', animal_type='cat')
+# describe_pet(pet_name='willie')
+# describe_pet('willie')
+# describe_pet(pet_name='john', animal_type='cat')
+
+"""Avoiding Argument errors"""
+# describe_pet()
