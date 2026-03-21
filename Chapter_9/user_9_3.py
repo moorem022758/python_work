@@ -1,0 +1,32 @@
+# 9-3 Users
+
+class User:
+    def __init__(self, first_name, last_name):
+        """Initialize User class first_name and Last_name"""
+        self.first_name = first_name
+        self.last_name = last_name
+        
+    def describe_user(self):
+        """describe_user () method creation"""
+        print(f"Here is the users infomation - {self.first_name} \
+{self.last_name}")
+        
+    def greet_user(self):
+        """greet_user () method creation"""
+        print(f"Hello {self.first_name} {self.last_name}")
+        
+
+"""First Instance call"""        
+user_profile = User('Michael', 'Moore')
+user_profile.describe_user()
+user_profile.greet_user()
+
+"""Second Instance call"""
+user_profile_1 = User('Harold', 'Moore')
+user_profile_1.describe_user()
+user_profile_1.greet_user()
+
+"""Third Instance call"""
+user_profile_2 = User('Robert', 'Moore')
+user_profile_2.describe_user()
+user_profile_2.greet_user()
