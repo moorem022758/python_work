@@ -25,6 +25,10 @@ class Car:
             self.odometer_reading = mileage
         else:
             print("You can't roll back an odometer!")
+            
+    def increment_odometer(self, miles):
+        """Add the given amount to the odometer reading."""
+        self.odometer_reading += miles
     
     
 """Class Instance"""    
@@ -40,3 +44,13 @@ my_new_car.read_odometer()
 """Set Attribute's value with a method()"""
 my_new_car.update_odometer(25)
 my_new_car.read_odometer()
+
+"""Incrementing an attribute's Value Through a Method"""
+my_used_car = Car('subaru', 'outback', 2019)
+print(my_used_car.get_descriptive_name())
+
+my_used_car.update_odometer(23_500)
+my_used_car.read_odometer()
+
+my_used_car.increment_odometer(100)
+my_used_car.read_odometer()
