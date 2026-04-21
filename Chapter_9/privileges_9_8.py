@@ -39,22 +39,22 @@ class Privileges():
         
 
 """First Instance call"""        
-user_profile = User('Michael', 'Moore')
-user_profile.describe_user()
-user_profile.greet_user()
+# user_profile = User('Michael', 'Moore')
+# user_profile.describe_user()
+# user_profile.greet_user()
 
 """Second Instance call"""
-user_profile_1 = User('Harold', 'Moore')
-user_profile_1.describe_user()
-user_profile_1.greet_user()
+# user_profile_1 = User('Harold', 'Moore')
+# user_profile_1.describe_user()
+# user_profile_1.greet_user()
 
 """Third Instance call"""
-user_profile_2 = User('Robert', 'Moore')
-user_profile_2.describe_user()
-user_profile_2.greet_user()
+# user_profile_2 = User('Robert', 'Moore')
+# user_profile_2.describe_user()
+# user_profile_2.greet_user()
 
 """"9_7_admin Instance call"""
-admin_rights = Admin('John', 'Doe')
-admin_rights.privileges.show_privileges()
+# admin_rights = Admin('John', 'Doe')
+# admin_rights.privileges.show_privileges()
 
 

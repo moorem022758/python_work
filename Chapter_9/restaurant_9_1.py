@@ -19,6 +19,6 @@ class Restaurant:
         
         
 
-restaurant = Restaurant('Kudos', 'Mexican')
-restaurant.describe_restaurant()
-restaurant.open_restaurant()
+# restaurant = Restaurant('Kudos', 'Mexican')
+# restaurant.describe_restaurant()
+# restaurant.open_restaurant()
