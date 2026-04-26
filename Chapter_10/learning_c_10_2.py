@@ -1,16 +1,13 @@
-# Working with a File's Contents
+# Learning C 10-2
 
 """Importing Path class from Pathlib"""
 from pathlib import Path
 
 """Assigning txt file path to variable"""
-path = Path('chapter_10/pi_million_digits.txt')
+path = Path('chapter_10/learning_python.txt')
 contents = path.read_text()
 
 lines = contents.splitlines()
-pi_string = ''
 for line in lines:
-    pi_string += line.lstrip()
-    
-print(f"{pi_string[:52]}...")
-print(len(pi_string))
+    line = line.replace('Python', 'C')
+    print(line)

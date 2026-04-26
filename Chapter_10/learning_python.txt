@@ -1,0 +1,3 @@
+In Python you can use the pathlib library to read from a file.
+In Python you can write to a txt file.
+In Python you can import classes from Python libraries.
